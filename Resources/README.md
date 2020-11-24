@@ -22,9 +22,12 @@ Data is more powerful when we share it with others! Let's take what we've learne
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
-For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
+For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. 
+Specifically, we'll be plotting [weather data](Resources/cities.csv).
 
-In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
+In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. 
+These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where 
+we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
 ### Website Requirements
 
@@ -34,7 +37,8 @@ The website must consist of 7 pages total, including:
 
 * A [landing page](#landing-page) containing:
   * An explanation of the project.
-  * Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
+  * Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image 
+	should take the user to that visualization.
 * Four [visualization pages](#visualization-pages), each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
@@ -46,7 +50,8 @@ The website must consist of 7 pages total, including:
 * A ["Data" page](#data-page) that:
   * Displays a responsive table containing the data used in the visualizations.
     * The table must be a bootstrap table component. [Hint](https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables)
-    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
+    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. 
+	Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
 
 The website must, at the top of every page, have a navigation menu that:
 
@@ -64,7 +69,8 @@ Ensure your repository has regular commits (i.e. 20+ commits) and a thorough REA
 ### Considerations
 
 * You may use the [weather data](Resources/cities.csv) or choose another dataset.
-* You must use Bootstrap. This includes using the Bootstrap `navbar` component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
+* You must use Bootstrap. This includes using the Bootstrap `navbar` component for the header on every page, the bootstrap table 
+	component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
 * You must deploy your website to GitHub pages, with the website working on a live, publicly accessible URL as a result.
 * Be sure to use a CSS media query for the navigation menu.
 * Be sure your website works at all window widths/sizes.
@@ -73,7 +79,8 @@ Ensure your repository has regular commits (i.e. 20+ commits) and a thorough REA
 ### Bonuses
 
 * Use a different dataset! The requirements above still hold, but make it your own.
-* Use a Bootstrap theme to customize your website. You may use a tool like [Bootswatch](https://bootswatch.com/). Make it look snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
+* Use a Bootstrap theme to customize your website. You may use a tool like [Bootswatch](https://bootswatch.com/). Make it look 
+	snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
 * Add extra visualizations! The more comparisons the better, right?
 * Use meaningful glyphicons next to links in the header.
 * Have visualization navigation on every visualizations page with an active state. See the screenshots below.
