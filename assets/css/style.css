@@ -1,15 +1,18 @@
 /* Your stylesheet */
 
-/* ------Format navbar STARTS here-------- */
-.topnav {
+/* ------Format navbar STARTS here-------- */ */
+.navbar {
+  /* white-space: nowrap; */
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  /* padding: .5rem 2rem; */
   background-color: none;
+  /* justify-content: none; */
+  /* position: fixed; */
+
 }
 
-/* ----THIS IS IMPORTANT FOR ALIGNMENT ---- */
-.topnav li a.list {
+.navbar li a.list {
   display: block;
   color: black;
   text-align: center;
@@ -21,7 +24,7 @@
 
 .li-home {float: left;}
 
-.topnav li a.home {
+.navbar li a.home {
   display: block;
   background-color: teal;
   color: white;
@@ -39,45 +42,38 @@
   text-align: left;
   vertical-align: middle;
   padding: 10px 12px;
-  margin: 0;
+  margin: 0,0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   background-color: transparent;
   border-radius: .50rem;
-}
+} 
 
 .dropdown-menu{
-  /* position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000; */
   display: none;
   float: left;
   min-width: 8rem;
   padding: none;
-  /* margin: .1rem 0 0; */
   font-size: 0.8rem;
   color: black;
   text-align: left;
   list-style: none;
   background-color: white;
-  /* background-clip: padding-box; 
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .25rem; */
-}
+ }
+
 .dropdown-menu li a {
   display: block;
   color: black;
   text-align: center;
-  margin: 0;
+  margin: 0,0;
   padding: 2px 4px;
   border-radius: .50rem;
   text-decoration: none;
-}
+} 
 
-.topnav li a:hover:not(.active) {
+.navbar li a:hover:not(.active) {
   background-color: grey;
 }
 
@@ -85,10 +81,48 @@
   background-color: grey;
  }
 
-.right {float: right;}
+.right {
+  float: right;
+  padding: none;
+  margin: 0,0;
+} 
+.far-right {
+  float: right;
+  padding: none;
+  margin-right: 100px;
+} 
 
-@media screen and (max-width: 600px) {
-  .topnav li.right, 
+
+@media screen and (max-width: 680px) {
+
+  .navbar li a.list {
+    padding: 5px 6px;
+    font-size: 0.8rem;
+  }
+    
+  .navbar li a.home {
+    padding: 8px 10x;
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    display: block;
+    padding: 5px 6px;
+    font-size: 0.8rem;
+  } 
+  
+  .dropdown-menu{
+    padding: none;
+    font-size: 0.8rem;
+  }
+  .far-right {
+    float: right;
+    padding: none;
+    margin-right: 5px;
+  } 
+  
 }
+  
 
-/* ------Format navbar ENDS here-------- */
+/* ------Format navbar ENDS here--------
+
