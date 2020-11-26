@@ -10,7 +10,8 @@
 * [Lesson Learned](#lessons)
 
 ## Assignment
-Design a website with a dashboard to share data analysis.   
+Design a website with a dashboard to share data analysis. 
+The final published product can be found here: https://klacerda08.github.io/Web-Design-Challenge/ 
 
 ## Data Sources
 Data included the weather data obtained using through OpenWeatherMap API earlier this year (October 2020).  
