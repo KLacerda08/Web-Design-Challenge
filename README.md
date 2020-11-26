@@ -5,16 +5,15 @@
 ## Table of contents
 * [Assignment](#assignment)
 * [Data Sources](#data_sources)
-* [Website Components(#components)
-* [Website Design(#design)
+* [Website Components](#components)
+* [Website Design](#design)
 * [Lesson Learned](#lessons)
 
 ## Assignment
 Design a website with a dashboard to share data analysis.   
 
 ## Data Sources
-Data included the weather data obtained using through the API challenge 
-assignment earlier this year (October 2020).  
+Data included the weather data obtained using through OpenWeatherMap API earlier this year (October 2020).  
 
 To design the website, the following tools were used: 
 - html coding with custom cascading style sheet (.css)
