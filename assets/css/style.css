@@ -1,137 +1,43 @@
 /* Your stylesheet */
 
-/* ------Format navbar STARTS here-------- */ */
+/* ------Format NEW navbar STARTS here-------- */ 
+
+.navbar-brand {
+  color: white !important;
+  background-color: teal !important;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 20px;
+  border-radius: .50rem;
+}
+
 .navbar {
-  /* white-space: nowrap; */
-  list-style-type: none;
-  margin: 0;
-  padding: none; 
-  background-color: none;
-  max-height: 80px;
-  /* display: none; */
-  /* justify-content: none; */
-  /* position: fixed; */
-
+  padding-left: 50px;
+  padding-right: 80px;
 }
 
-.navbar li a.list {
-  display: block;
-  color: black;
-  text-align: center;
-  margin: 0;
-  padding: 10px 12px;
-  border-radius: .50rem;
-  text-decoration: none;
+.dropdown-item {
+  color: grey;
 }
-
-.li-home {float: left;}
-
-.navbar li a.home {
-  display: block;
-  background-color: teal;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 10px 12px;
-  border-radius: .50rem;
-  text-decoration: none;
-  font-size: 2rem
-}
-
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  color: black;
-  text-align: left;
-  vertical-align: middle;
-  padding: 10px 12px;
-  margin: 0,0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border-radius: .50rem;
-} 
-
-.dropdown-menu{
-  display: none;
-  float: left;
-  min-width: 8rem;
-  padding: none;
-  font-size: 0.8rem;
-  color: black;
-  text-align: left;
-  list-style: none;
-  background-color: white;
- }
-
-.dropdown-menu li a {
-  display: block;
-  color: black;
-  text-align: center;
-  margin: 0,0;
-  padding: 2px 4px;
-  border-radius: .50rem;
-  text-decoration: none;
-} 
-
-.navbar li a:hover:not(.active) {
-  background-color: grey;
-}
-
-.btn button:hover:not(.active) {
-  background-color: grey;
- }
-
-.right {
-  float: right;
-  padding: none;
-  margin: 0,0;
-} 
-.far-right {
-  float: right;
-  padding: none;
-  margin-right: 100px;
-} 
-
 
 @media screen and (max-width: 680px) {
 
   .navbar {
-    background-color: teal;
-    max-height: 80px;
+      background-color: teal !important;
+      padding-right: 15px;
+      padding-left: 0px;
   }
 
-  .navbar li a.list {
-    padding: 5px 6px;
+  .nav-item {
+    padding-left: 35px
   }
-    
-  .navbar li a.home {
-    padding: 8px 10x;
-    font-size: 1.2rem;
-  }
-  
-  .btn {
-    display: block;
-    padding: 5px 6px;
-  } 
-  
-  .dropdown-menu{
-    padding: none;
 
-  }
-  .far-right {
-    float: right;
-    padding: none;
-    margin-right: 5px;
-  } 
-  
-}
- /* ------Format navbar ENDS here-------- */
+} 
+
+ /* ------Format NEW navbar ENDS here-------- */
 
  /* ------Format content STARTS here-------- */
- #main-title {
+ .main-title {
   color: teal;
   text-align: left;
   margin: 0,0;
@@ -154,7 +60,7 @@
 } 
  .card-title {
   color: teal;
-  text-align: left;
+  text-align: center;
   margin: 0,0;
   padding: none; 
   border-radius: none;
@@ -196,6 +102,15 @@
   padding-top: 15px;
 }
 
+.padding-wind {
+  padding-top: 15px;
+}
+
+.padding-fig {
+  padding-bottom: 50px;
+}
+
+
 @media screen and (max-width: 680px) {
 
   .wrap-image {
@@ -211,15 +126,4 @@
   }
 }
 
-
-  
-
-/* .card-img-top {
-  
-} 
-
-#featured-image {
-  ;
-} 
-
-} */
+/* -----------Format Content ENDS Here------------ */

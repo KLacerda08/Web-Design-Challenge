@@ -18,54 +18,58 @@
 </head>
 
 <body>
-<!-- -------navbar construction--------- -->
-<!-- Navbar STARTS here-->
-  <nav class="navbar">
-    <ul>
-      <li class="btn li-home"><a class="home" href="index.html"><strong>Latitude</strong></a></li>
-    </ul>
-    <ul class="right">
-      <li class="btn far-right"><a class="list" href="04_data.htm" target="_blank">Data</a></li>
-      <li class="btn right"><a class="list" href="05_comparisons.html" target="_blank">Comparison</a></li>
-      <li class="right navbar btn">
-        <div>
-          <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>Plots
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="01_temp.html" target="_blank">Temperature</a></li>
-                    <li><a href="02_humidity.html" target="_blank">Humidity</a></li>
-                    <li><a href="03_cloudiness.html" target="_blank">Cloudiness</a></li>
-                    <li><a href="04_windspeed.html" target="_blank">Wind Speed</a></li>
-                </ul>
-        </div>
-      </li>
-    </ul>
+  <!-- NAVBAR STARTS HERE -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="01_temp.html">Temperature</a>
+            <a class="dropdown-item" href="02_humidity.html">Humidity</a>
+            <a class="dropdown-item" href="03_cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="04_windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="05_comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="06_data.html">Data</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <!-- Navbar ENDS here-->
 
-<!-------- Page Content STARTS here -------->
-
- <!-- <div class="container main-content"> -->
+  <!-------- Page Content STARTS here -------->
   <div class="container container-border">
-   <!-- Row 1 -->
+    <!-- Row 1 -->
     <div class="row">
       <div class="col-md-8">
         <div class="card">
           <div class="card-body">
-            <h4 id="main-title"> Max Temperature</h4><br>
-            <img id="featured-image" src="assets/images/Fig1_temp_latitude.png"
-              class="image-width float-left img-responsive wrap-image" alt="Temperature">
-            <p class="wrap pull-right justified">The temperature data shows the logical decrease in 
-              temperature with distance from the equator.  In this dataset, the temperatures in the 
-              southern hemisphere appear to be warmer than the northern hemisphere; this makes sense
-              for the time of year (mid-autumn north of the equator, and mid-spring south).  Additionally
-              The shape of the plot is interesting in that there appear to be a more measurements with a 
-              greater temperature variation north of the Equator. This can be explained by the fact 
-              that most of Earth's land mass is north of the Equator, and the land mass is more evenly 
-              distributed from Equator to Pole in the northern hemisphere. This is in contrast to the 
-              southern hemisphere, where much more of the earth's surface is covered with water,
-              especially near the South Pole. <p>
+            <h4 class="main-title"> Max Temperature</h4><br>
+              <img src="assets/images/Fig1_temp_latitude.png"
+                class="image-width float-left img-responsive wrap-image" alt="Temperature">
+              <p class="wrap pull-right justified">The temperature data shows the logical decrease in 
+                temperature with distance from the equator.  In this dataset, the temperatures in the 
+                southern hemisphere appear to be warmer than the northern hemisphere; this makes sense
+                for the time of year (mid-autumn north of the equator, and mid-spring south).  Additionally
+                The shape of the plot is interesting in that there appear to be a more measurements with a 
+                greater temperature variation north of the Equator. This can be explained by the fact 
+                that most of Earth's land mass is north of the Equator, and the land mass is more evenly 
+                distributed from Equator to Pole in the northern hemisphere. This is in contrast to the 
+                southern hemisphere, where much more of the earth's surface is covered with water,
+                especially near the South Pole. 
+              <p>
           </div>
         </div>
       </div>
@@ -77,50 +81,30 @@
             <!-- Card Row 1 -->
             <div class="row">
               <div class="col-md-6">
-                <!-- <div class="card">
-                  <div class="card-body"> -->
-                    <!-- <p class="title1"> vs. Temperature</p> -->
                     <a href="01_temp.html">
                       <img src="assets/images/Fig1_temp_latitude.png" alt="Temperature" class="small-image border1">
                     </a>
-                  <!-- </div>
-                </div> -->
               </div>
 
               <div class="col-md-6">
-                <!-- <div class="card">
-                  <div class="card-body"> -->
-                    <!-- <p class="title1"> vs. Humidity</p> -->
                     <a href="02_humidity.html">
                       <img src="assets/images/Fig2_humidity_latitude.png" alt="Humidity" class="small-image">
                     </a>
-                  <!-- </div>
-                </div>   -->
               </div>
             </div>
 
             <!-- Card Row 2 -->
             <div class="row">
               <div class="col-md-6">
-                <!-- <div class="card">
-                  <div class="card-body"> -->
-                    <!-- <p class="title1">vs. Cloudiness</p> -->
                     <a href="03_cloudiness.html">
                       <img src="assets/images/Fig3_cloudiness_latitude.png" alt="Cloudiness" class="small-image">
                     </a>
-                  <!-- </div>
-                </div> -->
               </div>
 
               <div class="col-md-6">
-                <!-- <div class="card">
-                  <div class="card-body"> -->
-                    <!-- <p class="title1"> vs. Wind Speed</p> -->
                     <a href="04_windspeed.html">
                       <img src="assets/images/Fig4_wind_latitude.png" alt="Wind Speed" class="small-image">
                     </a>
-                  <!-- </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -129,3 +113,14 @@
     </div>
   </div>
 </body>
+
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
