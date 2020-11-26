@@ -18,91 +18,260 @@
 </head>
 
 <!-- -------navbar construction--------- -->
+
 <body>
 
   <!-- Navbar STARTS here-->
 
+
   <nav class="navbar">
-      <ul>
-        <li class="btn li-home"><a class ="home" href="#home"><strong>Latitude</strong></a></li>
-      </ul>
-      <ul class = "right">  
-        <li class="btn far-right"><a class = "list" href="#data">Data</a></li>
-        <li class="btn right"><a class = "list" href="#Comparison">Comparison</a></li>
-          <div class="right navbar btn">
-            <button class="btn">Plots</button>
-            <button class="btn dropdown-toggle" data-toggle="dropdown">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Temperature</a></li>
-              <li><a href="#">Humidity</a></li>
-              <li><a href="#">Cloudiness</a></li>
-              <li><a href="#">Wind Speed</a></li>
-            </ul>
-          </div>
-      </ul>
+    <ul>
+      <li class="btn li-home"><a class="home" href="index.html"><strong>Latitude</strong></a></li>
+    </ul>
+    <ul class="right">
+      <li class="btn far-right"><a class="list" href="04_data.htm" target="_blank">Data</a></li>
+      <li class="btn right"><a class="list" href="05_comparisons.html" target="_blank">Comparison</a></li>
+      <li class="right navbar btn">
+        <div>
+          <button class="btn dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>Plots
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="01_temp.html" target="_blank">Temperature</a></li>
+                    <li><a href="02_humidity.html" target="_blank">Humidity</a></li>
+                    <li><a href="03_cloudiness.html" target="_blank">Cloudiness</a></li>
+                    <li><a href="04_windspeed.html" target="_blank">Wind Speed</a></li>
+                </ul>
+        </div>
+      </li>
+    </ul>
   </nav>
+
+  <!-- MY ORIGINAL -->
+
+  <!-- <nav class="navbar">
+    <ul>
+      <li class="btn li-home"><a class ="home" href="index.html"><strong>Latitude</strong></a></li>
+    </ul>
+    <ul class = "right">  
+      <li class="btn far-right"><a class = "list" href="04_data.htm" target="_blank">Data</a></li>
+      <li class="btn right"><a class = "list" href="05_comparisons.html" target="_blank">Comparison</a></li>
+        <div class="right navbar btn">
+          <button class="btn dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>Plots
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="01_temp.html" target="_blank">Temperature</a></li>
+            <li><a href="02_humidity.html" target="_blank">Humidity</a></li>
+            <li><a href="03_cloudiness.html" target="_blank">Cloudiness</a></li>
+            <li><a href="04_windspeed.html" target="_blank">Wind Speed</a></li>
+          </ul>
+        </div>
+    </ul>
+</nav> -->
 
   <!-- Navbar ENDS here-->
 
-<!-- Page Content STARTS here -->
-<div class="container main-content">
-  <div class="row">
+  <!-- Page Content STARTS here -->
+
+  <!-- <div class="container main-content"> -->
+  <div class="container container-border">
+
+    <!-- Row 1 -->
+    <!-- <div class="row">
     <div class="col-md-8">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Latitutde</h5>
-          <img id="featured-image" src="..." class="card-img-top" alt="...">
-          <p class="card-text">STuff.</p>
+      <h4 id = "main-title"> Summary: Latitude vs. X</h4>
+      <br>
+    </div> -->
+    <!-- <div class= "col-md-4">
+    <h5 id = "visualizations"> Visualizations</h5>
+      <br>
+    </div> -->
+    <!-- wrap-image  -->
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h4 id="main-title"> Summary: Latitude vs. X</h4><br>
+            <img id="featured-image" src="assets/images/Fig1_temp_latitude.png"
+              class="image-width float-left img-responsive wrap-image" alt="Temperature">
+            <p class="wrap pull-right justified">This project presents the analysis of weather patterns with distance
+              from the equator. Weather data from 500+ cities across the world was obtained using the
+              OpenWeatherMap API. First, 1500 random geocoordinates were identified throughout the world, spanning the
+              full
+              range of latitude (-90 to 90) and longitude (-180 to 180) possibilities. These coordinates were used to
+              randomly
+              select 500+ cities in the vicinities of the random coordinates. The cities were then
+              passed into the OpenWeatherMap API call to identify various identifiers and weather
+              characteritics, including temperature, humidity, cloudiness, and wind speed. Sources for
+              analyis included: OpenWeatherMapAPI at <a href=https://openweathermap.org/api>
+                https://openweathermap.org/api</a> and citypy at <a
+                href=https://pypi.org/project/citipy>https://pypi.org/project/citipy</a>.</p>
+          </div>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Visualizations</h5>
+ 
+            <!-- Card Row 1 -->
+            <div class="row">
+              <div class="col-md-6">
+                <!-- <div class="card">
+                  <div class="card-body"> -->
+                    <!-- <p class="title1"> vs. Temperature</p> -->
+                    <a href="01_temp.html" target="_blank">
+                      <img src="assets/images/Fig1_temp_latitude.png" alt="Temperature" class="small-image">
+                    </a>
+                  <!-- </div>
+                </div> -->
+              </div>
 
-
-    </div>
-
-    <div class="col-md-4">
-      <div class="card"">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Latitutde</h5>
-          <div class="row">
-            <div class="col-md-6">
-              Insert images here
-
-
+              <div class="col-md-6">
+                <!-- <div class="card">
+                  <div class="card-body"> -->
+                    <!-- <p class="title1"> vs. Humidity</p> -->
+                    <a href="02_humidity.html" target="_blank">
+                      <img src="assets/images/Fig2_humidity_latitude.png" alt="Humidity" class="small-image">
+                    </a>
+                  <!-- </div>
+                </div>   -->
+              </div>
             </div>
-            <div class="col-md-6">
-              Insert images here
 
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              Insert images here
+            <!-- Card Row 2 -->
+            <div class="row">
+              <div class="col-md-6">
+                <!-- <div class="card">
+                  <div class="card-body"> -->
+                    <!-- <p class="title1">vs. Cloudiness</p> -->
+                    <a href="03_cloudiness.html" target="_blank">
+                      <img src="assets/images/Fig3_cloudiness_latitude.png" alt="Cloudiness" class="small-image">
+                    </a>
+                  <!-- </div>
+                </div> -->
+              </div>
 
-            </div>
-            <div class="col-md-6">
-              Insert images here
-
+              <div class="col-md-6">
+                <!-- <div class="card">
+                  <div class="card-body"> -->
+                    <!-- <p class="title1"> vs. Wind Speed</p> -->
+                    <a href="04_windspeed.html" target="_blank">
+                      <img src="assets/images/Fig4_wind_latitude.png" alt="Wind Speed" class="small-image">
+                    </a>
+                  <!-- </div>
+                </div> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </body>
+
+<!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h4 class="display-4">Summary: Latitude vs. X</h1>
+            <img id="featured-image" src="assets/images/Fig1_temp_latitude.png" class="card-img-top" alt="...">
+            <p class="card-text pull-right">This project presents the analysis of weather patterns with distance 
+              from the equator. Weather data from 500+ cities across the world was obtained using the 
+              OpenWeatherMap API at https://openweathermap.org/api. First, 1500 random geocoordinates 
+              were identified throughout the world, spanning  the full range of latitude (-90 to 90) 
+              and longitude (-180 to 180) possibilities. These coordinates were used to randomly 
+              select 500+ cities in the vicinities of the random coordinates. The cities were then 
+              passed into the OpenWeatherMap API call to identify various identifiers and weather 
+              characteritics, including temperature, humidity, cloudiness, and wind speed.    </p>
+        </div>
+      </div> -->
+
+
+<!-- <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Summary: Latitude vs. X</h4>
+          <img id="featured-image" src="assets/images/Fig1_temp_latitude.png" class="float-left card-img-top img-responsive" alt="...">
+          <p class="card-text pull-right">This project presents the analysis of weather patterns with distance 
+            from the equator. Weather data from 500+ cities across the world was obtained using the 
+            OpenWeatherMap API at https://openweathermap.org/api. First, 1500 random geocoordinates 
+            were identified throughout the world, spanning  the full range of latitude (-90 to 90) 
+            and longitude (-180 to 180) possibilities. These coordinates were used to randomly 
+            select 500+ cities in the vicinities of the random coordinates. The cities were then 
+            passed into the OpenWeatherMap API call to identify various identifiers and weather 
+            characteritics, including temperature, humidity, cloudiness, and wind speed.    </p>
+        </div>
+      </div> -->
+
+
+
 <!-- Page content ENDS here -->
 
+<!-- <div class="col-md-8">
+  <div class="card">
+    <img src="assets/images/Fig1_temp_latitude.png" class="card-img-top" alt="Temperature vs. Latitude">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Summary: Latitude vs. X</strong></h5>
+      <img id="featured-image" src="assets/images/Fig1_temp_latitude.png" class="card-img-top" alt="...">
+      <p class="card-text">STuff.</p>
+    </div>
+  </div> -->
 
-  <!-- Javascript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+<!-- <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Summary: Latitude vs. X</h4>
+      <img id="featured-image" src="assets/images/Fig1_temp_latitude.png" class="card-img-top" alt="...">
+      <p class="card-text pull-right">This project presents the analysis of weather patterns with distance 
+        from the equator. Weather data from 500+ cities across the world was obtained using the 
+        OpenWeatherMap API at https://openweathermap.org/api. First, 1500 random geocoordinates 
+        were identified throughout the world, spanning  the full range of latitude (-90 to 90) 
+        and longitude (-180 to 180) possibilities. These coordinates were used to randomly 
+        select 500+ cities in the vicinities of the random coordinates. The cities were then 
+        passed into the OpenWeatherMap API call to identify various identifiers and weather 
+        characteritics, including temperature, humidity, cloudiness, and wind speed.    </p>
+    </div>
+  </div> -->
+<!-- <div class="col-md-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Visualizations</h5>
+        <div class="row">
+          <div class="col-md-6">
+            Insert images here
+
+
+          </div>
+          <div class="col-md-6">
+            Insert images here
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            Insert images here
+
+          </div>
+          <div class="col-md-6">
+            Insert images here
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body> -->
+
+
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
 </body>
 
